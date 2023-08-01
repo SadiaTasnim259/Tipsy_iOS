@@ -36,6 +36,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="0%">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="tipPersentageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wNO-9u-XGC"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1r-iQ-VxP">
                                                         <rect key="frame" x="124.66666666666666" y="0.0" width="84.666666666666657" height="50"/>
@@ -43,6 +46,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="10%">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="tipPersentageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wRE-4G-Aqt"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dx-cT-Ee1">
                                                         <rect key="frame" x="249.33333333333334" y="0.0" width="84.666666666666657" height="50"/>
@@ -50,6 +56,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="20%">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="tipPersentageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cb2-6z-As1"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -60,12 +69,12 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="xt9-3c-c1v">
-                                                <rect key="frame" x="99" y="230" width="175" height="35"/>
+                                                <rect key="frame" x="91.666666666666686" y="230" width="190" height="35"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OT-lw-2HD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OT-lw-2HD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="35"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="35" id="4nd-wu-ukh"/>
+                                                            <constraint firstAttribute="width" constant="50" id="4nd-wu-ukh"/>
                                                             <constraint firstAttribute="height" constant="35" id="NZU-N2-Xtw"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
@@ -73,10 +82,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="PRj-05-Rdr">
-                                                        <rect key="frame" x="75" y="1.3333333333333144" width="100" height="32"/>
+                                                        <rect key="frame" x="90" y="1.3333333333333144" width="100" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="Rcq-tr-oye"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="numberOfPersonStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="e2t-La-rtq"/>
+                                                        </connections>
                                                     </stepper>
                                                 </subviews>
                                             </stackView>
@@ -101,6 +113,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vMq-kx-qu0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.84434294700000001" green="0.97709983590000005" blue="0.9223768711" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -141,6 +156,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="veT-md-tjM"/>
+                    <connections>
+                        <outlet property="ChoosedPersonLabel" destination="3OT-lw-2HD" id="EBC-Ye-kaR"/>
+                        <outlet property="inputTextField" destination="0Lm-P3-0dP" id="bfz-hd-KcZ"/>
+                        <outlet property="tenButton" destination="K1r-iQ-VxP" id="rul-Yj-4SX"/>
+                        <outlet property="twentyButton" destination="3Dx-cT-Ee1" id="p9O-HS-YzI"/>
+                        <outlet property="zeroButton" destination="cNb-ga-289" id="tOh-or-87k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -196,18 +218,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a78-2O-zY7">
+                                <rect key="frame" x="65" y="746" width="263" height="54"/>
+                                <color key="backgroundColor" red="0.13397228720000001" green="0.69171357150000001" blue="0.41734397410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="WkE-TL-Jus"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Recalculate">
+                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JaD-AV-BTq"/>
                         <color key="backgroundColor" red="0.97727245090000003" green="1" blue="0.99291318660000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mGK-2U-M4d" firstAttribute="leading" secondItem="J5v-ro-E4T" secondAttribute="leading" id="2aj-FH-jgb"/>
                             <constraint firstAttribute="trailing" secondItem="mGK-2U-M4d" secondAttribute="trailing" id="Qvj-U7-igm"/>
+                            <constraint firstItem="JaD-AV-BTq" firstAttribute="trailing" secondItem="a78-2O-zY7" secondAttribute="trailing" constant="65" id="Xqg-a2-89W"/>
                             <constraint firstItem="YvL-OX-aDT" firstAttribute="top" secondItem="mGK-2U-M4d" secondAttribute="bottom" constant="8" id="bbJ-rF-PsT"/>
+                            <constraint firstItem="a78-2O-zY7" firstAttribute="leading" secondItem="JaD-AV-BTq" secondAttribute="leading" constant="65" id="biR-6a-qme"/>
                             <constraint firstItem="JaD-AV-BTq" firstAttribute="trailing" secondItem="YvL-OX-aDT" secondAttribute="trailing" constant="40" id="mov-bF-dgQ"/>
+                            <constraint firstAttribute="bottom" secondItem="a78-2O-zY7" secondAttribute="bottom" constant="52" id="oGm-KO-jP0"/>
                             <constraint firstItem="mGK-2U-M4d" firstAttribute="top" secondItem="J5v-ro-E4T" secondAttribute="top" id="vmq-17-yWd"/>
                             <constraint firstItem="YvL-OX-aDT" firstAttribute="leading" secondItem="JaD-AV-BTq" secondAttribute="leading" constant="40" id="wpe-2G-4GX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tipDiscriptionLabel" destination="YvL-OX-aDT" id="Jw3-eA-g78"/>
+                        <outlet property="tipDisplayLabel" destination="lwh-Zp-q3u" id="FGW-yx-9Oz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgx-p6-iTu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

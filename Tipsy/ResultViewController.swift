@@ -8,7 +8,12 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var tipDisplayLabel: UILabel!
+    
+    @IBOutlet weak var tipDiscriptionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
