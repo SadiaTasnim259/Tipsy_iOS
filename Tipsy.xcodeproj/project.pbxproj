@@ -13,6 +13,7 @@
 		04644BED2A78DBA100FC945E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04644BEB2A78DBA100FC945E /* Main.storyboard */; };
 		04644BEF2A78DBA300FC945E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04644BEE2A78DBA300FC945E /* Assets.xcassets */; };
 		04644BF22A78DBA300FC945E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04644BF02A78DBA300FC945E /* LaunchScreen.storyboard */; };
+		04644BFA2A78DCE300FC945E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04644BF92A78DCE300FC945E /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		04644BEE2A78DBA300FC945E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04644BF12A78DBA300FC945E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04644BF32A78DBA300FC945E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04644BF92A78DCE300FC945E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				04644BE52A78DBA100FC945E /* AppDelegate.swift */,
 				04644BE72A78DBA100FC945E /* SceneDelegate.swift */,
 				04644BE92A78DBA100FC945E /* ViewController.swift */,
+				04644BF92A78DCE300FC945E /* ResultViewController.swift */,
 				04644BEB2A78DBA100FC945E /* Main.storyboard */,
 				04644BEE2A78DBA300FC945E /* Assets.xcassets */,
 				04644BF02A78DBA300FC945E /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				04644BEA2A78DBA100FC945E /* ViewController.swift in Sources */,
 				04644BE62A78DBA100FC945E /* AppDelegate.swift in Sources */,
 				04644BE82A78DBA100FC945E /* SceneDelegate.swift in Sources */,
+				04644BFA2A78DCE300FC945E /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +306,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sadia.Tipsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +337,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sadia.Tipsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
