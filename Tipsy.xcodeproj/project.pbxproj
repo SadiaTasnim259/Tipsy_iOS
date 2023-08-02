@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04000CD92A7A94FA003B4463 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04000CD82A7A94FA003B4463 /* UIViewController+Ext.swift */; };
 		04644BE62A78DBA100FC945E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04644BE52A78DBA100FC945E /* AppDelegate.swift */; };
 		04644BE82A78DBA100FC945E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04644BE72A78DBA100FC945E /* SceneDelegate.swift */; };
 		04644BEA2A78DBA100FC945E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04644BE92A78DBA100FC945E /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04000CD82A7A94FA003B4463 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		04644BE22A78DBA100FC945E /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04644BE52A78DBA100FC945E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04644BE72A78DBA100FC945E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				04644BEE2A78DBA300FC945E /* Assets.xcassets */,
 				04644BF02A78DBA300FC945E /* LaunchScreen.storyboard */,
 				04644BF32A78DBA300FC945E /* Info.plist */,
+				04000CD82A7A94FA003B4463 /* UIViewController+Ext.swift */,
 			);
 			path = Tipsy;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				04644BEA2A78DBA100FC945E /* ViewController.swift in Sources */,
 				04644BE62A78DBA100FC945E /* AppDelegate.swift in Sources */,
+				04000CD92A7A94FA003B4463 /* UIViewController+Ext.swift in Sources */,
 				04644BE82A78DBA100FC945E /* SceneDelegate.swift in Sources */,
 				04644BFA2A78DCE300FC945E /* ResultViewController.swift in Sources */,
 			);

@@ -17,13 +17,15 @@ class ViewController: UIViewController {
     
     var selectedTipPercentage : Double = 0.1
     var choosedPersonNumber : Double = 2.0
-    var tipPercentage: String = ""
+    var tipPercentage: String = "10%"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    }
+        tenButton.configuration?.background.backgroundColor = UIColor.systemGreen
+        tenButton.configuration?.baseForegroundColor = UIColor.white
 
+    }
     
     @IBAction func tipPersentageButton(_ sender: UIButton) {
         
@@ -74,6 +76,11 @@ class ViewController: UIViewController {
     }
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
         
+        guard let bill = inputTextField.text, !bill.isEmpty else{
+            self.showToast(message: "Please Enter Bill", bottomPadding: 120)
+            return
+        }
+        
         let resultViewController = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
         resultViewController.tip = calculateTip()
         resultViewController.personNumber = Int(choosedPersonNumber)
@@ -82,8 +89,6 @@ class ViewController: UIViewController {
                 
         self.navigationController?.pushViewController(resultViewController, animated: true)
     }
-    
-    
     
     @IBAction func dismiskeyboard(_ sender: UITapGestureRecognizer) {
         inputTextField.endEditing(true)

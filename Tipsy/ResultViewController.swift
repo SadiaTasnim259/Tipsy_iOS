@@ -21,12 +21,9 @@ class ResultViewController: UIViewController {
 
         tipDisplayLabel.text = String(format: "%.2f", tip)
         tipDiscriptionLabel.text = "Split between \(personNumber) people, with \(tipPercentages) tip."
-        
     }
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
     }
-    
-   
-
 }
