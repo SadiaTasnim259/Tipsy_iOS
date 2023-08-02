@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var twentyButton: UIButton!
     @IBOutlet weak var ChoosedPersonLabel: UILabel!
     
+    var selectedTipPercentage : Double = 0.1
+    var choosedPersonNumber : Double = 2.0
+    var tipPercentage: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,14 +26,17 @@ class ViewController: UIViewController {
 
     
     @IBAction func tipPersentageButton(_ sender: UIButton) {
+        
+        tipPercentage = sender.titleLabel?.text ?? ""
+        
         inputTextField.endEditing(true)
         resetAllTipButton()
         
         sender.configuration?.background.backgroundColor = UIColor.systemGreen
         sender.configuration?.baseForegroundColor = UIColor.white
         
-        var selectedTipPercentage = sender.titleLabel?.text
-        
+        selectedTipPercentage = Double(sender.tag)/100
+      
     }
     
     func resetAllTipButton(){
@@ -44,14 +51,36 @@ class ViewController: UIViewController {
     }
     
     @IBAction func numberOfPersonStepper(_ sender: UIStepper) {
-        var choosedPersonNumber  = Int(sender.value)
-        ChoosedPersonLabel.text = String(choosedPersonNumber)
+        choosedPersonNumber  = sender.value
+        ChoosedPersonLabel.text = String(Int(sender.value))
         
         inputTextField.endEditing(true)
     }
-    
+    func calculateTip()-> Double{
+        guard let bill = inputTextField.text, !bill.isEmpty else{
+            return 0.0
+        }
+        
+        guard let doubleBill = Double(bill) else{
+            return 0.0
+        }
+        
+        let perPersonBill = doubleBill / choosedPersonNumber
+        let perPersonTip = perPersonBill * selectedTipPercentage
+        let totalBillWithTip = perPersonBill + perPersonTip
+        
+        return totalBillWithTip
+        
+    }
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
         
+        let resultViewController = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+        resultViewController.tip = calculateTip()
+        resultViewController.personNumber = Int(choosedPersonNumber)
+        resultViewController.tipPercentages = tipPercentage
+               
+                
+        self.navigationController?.pushViewController(resultViewController, animated: true)
     }
     
     
