@@ -1,4 +1,4 @@
 # Tipsy_iOS
-| App Walkthrough | Home Screen | User Screen |
-| --- | --- | --- |
-| <p align="center"><img src="" height="450"/></p> | 
+| App Walkthrough | 
+| --- | 
+| <p align="center"><img src="Screenshots and App Walkthrough/Tipsy.gif" height="450"/></p> | 
