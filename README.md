@@ -7,11 +7,9 @@
 
 ## Screenshots and App Walkthrough
 
-| App Walkthrough | Home Screen | Creating User Screen |
+| App Walkthrough | Home Screen | Billing Details Screen |
 | --- | --- | --- |
 | <p align="center"><img src="Screenshots and App Walkthrough/Tipsy.gif" height="450"/></p> | <p align="center"><img src="Screenshots and App Walkthrough/All User.png" height="450"/></p> | <p align="center"><img src="Screenshots and App Walkthrough/Create User.png" height="450"/></p> |
 
-| Search Screen | Update Screen |
-| --- | --- |
-| <p align="center"><img src="Screenshots and App Walkthrough/Searched User.png" height="450"/></p> | <p align="center"><img src="Screenshots and App Walkthrough/Update User.png" height="450"/></p> |
+
 
