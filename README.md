@@ -9,7 +9,7 @@
 
 | App Walkthrough | Home Screen | Billing Details Screen |
 | --- | --- | --- |
-| <p align="center"><img src="Screenshots and App Walkthrough/Tipsy.gif" height="450"/></p> | <p align="center"><img src="Screenshots and App Walkthrough/All User.png" height="450"/></p> | <p align="center"><img src="Screenshots and App Walkthrough/Create User.png" height="450"/></p> |
+| <p align="center"><img src="Screenshots and App Walkthrough/Tipsy.gif" height="450"/></p> | <p align="center"><img src="Screenshots and App Walkthrough/HomeScreen.png" height="450"/></p> | <p align="center"><img src="Screenshots and App Walkthrough/BillingScreen.png" height="450"/></p> |
 
 
 
