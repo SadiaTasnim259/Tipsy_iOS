@@ -1,4 +1,4 @@
-# Tipsy_iOS
+# Tipsy
 
 ## What is it?
 - Tipsy is a tip-managing app.
